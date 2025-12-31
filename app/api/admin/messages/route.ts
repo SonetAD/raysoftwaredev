@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { cookies } from 'next/headers';
 import { getAllMessages, markAsRead, deleteMessage } from '@/lib/db';
 
 function isAuthenticated(request: NextRequest): boolean {

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface Message {
   id: number;
@@ -31,7 +32,7 @@ export default function AdminPanel() {
         const data = await response.json();
         setMessages(data.messages);
       }
-    } catch (err) {
+    } catch {
       // Not logged in
     } finally {
       setCheckingAuth(false);
@@ -58,7 +59,7 @@ export default function AdminPanel() {
         const data = await response.json();
         setError(data.error || 'Login failed');
       }
-    } catch (err) {
+    } catch {
       setError('Login failed. Please try again.');
     } finally {
       setLoading(false);
@@ -147,7 +148,7 @@ export default function AdminPanel() {
             </button>
           </form>
 
-          <a href="/" className="admin-back-link">← Back to site</a>
+          <Link href="/" className="admin-back-link">← Back to site</Link>
         </div>
       </div>
     );
@@ -209,7 +210,7 @@ export default function AdminPanel() {
           )}
         </div>
 
-        <a href="/" className="admin-back-link">← Back to site</a>
+        <Link href="/" className="admin-back-link">← Back to site</Link>
       </div>
     </div>
   );

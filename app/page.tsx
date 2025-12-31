@@ -38,7 +38,7 @@ export default function Home() {
       } else {
         alert('Something went wrong. Please try again.');
       }
-    } catch (error) {
+    } catch {
       alert('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -388,7 +388,7 @@ export default function Home() {
 
                         <div className='iphone-card'>
                           <div className='iphone-card-title'>
-                            Today's Outfit
+                            Today&apos;s Outfit
                           </div>
                           <div className='iphone-card-grid'>
                             {['👔', '👗', '👠'].map((emoji, i) => (
@@ -455,7 +455,7 @@ export default function Home() {
           <div className='contact-header'>
             <h2 className='section-title'>Questions?</h2>
             <p className='section-subtitle'>
-              Have a question about our apps? We'd love to hear from you.
+              Have a question about our apps? We&apos;d love to hear from you.
             </p>
           </div>
 
@@ -556,7 +556,7 @@ export default function Home() {
           <div className='modal-content'>
             <div className='modal-icon'>✓</div>
             <h3 className='modal-title'>Thank You!</h3>
-            <p className='modal-text'>We'll get back to you soon.</p>
+            <p className='modal-text'>We&apos;ll get back to you soon.</p>
           </div>
         </div>
       )}
