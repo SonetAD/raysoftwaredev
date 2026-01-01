@@ -63,7 +63,7 @@ export default function Home() {
             href='#home'
             className='nav-logo'
           >
-            Ray Software
+            Ray Software Development
           </a>
           <div className='nav-links'>
             <a
@@ -156,7 +156,7 @@ export default function Home() {
           {/* Left - Company Name & Tagline */}
           <div className='hero-text'>
             <h1 className='hero-title'>
-              <span className='hero-title-gradient'>Ray Software</span>
+              <span className='hero-title-gradient'>Ray Software Development</span>
             </h1>
 
             <p className='hero-tagline'>
@@ -512,7 +512,7 @@ export default function Home() {
         <div className='container'>
           <div className='footer-inner'>
             <div className='footer-brand'>
-              <div className='footer-logo'>Ray Software</div>
+              <div className='footer-logo'>Ray Software Development</div>
               <p className='footer-tagline'>
                 Crafting exceptional digital experiences
               </p>
@@ -545,7 +545,7 @@ export default function Home() {
             </div>
           </div>
           <div className='footer-bottom'>
-            © 2025 Ray Software. All rights reserved.
+            © 2025 Ray Software Development. All rights reserved.
           </div>
         </div>
       </footer>
